@@ -6,8 +6,9 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        name: prueba
-      - uses: ./action-a
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Accion
+        uses: ./action-a
         with:
           MY_NAME: "Yeison"
