@@ -10,8 +10,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Accion a
         uses: ./action-a
+        with:
+          MY_NAME: "Yeison Orlando Manrique Rojas"
       - name: Accion b
         uses: ./action-b
         with:
-          MY_NAME: "Yeison Orlando Manrique Rojas"
           MY_NAM: "prueba"
