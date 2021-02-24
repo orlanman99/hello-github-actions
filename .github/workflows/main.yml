@@ -11,4 +11,4 @@ jobs:
       - name: Accion
         uses: ./action-a
         with:
-          MY_NAME: "Yeison"
+          MY_NAME: ""
