@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: prueba
-      - uses: ./action-a
+        uses: ./action-a
         with:
           MY_NAME: "Yeison"
