@@ -3,7 +3,7 @@ description: "Prueba"
 author: "octocat@github.com"
 
 inputs:
-  MY_NAME:
+  MY_NAM:
     description: "Who to greet"
     required: true
     default: "Karen Manrique"
