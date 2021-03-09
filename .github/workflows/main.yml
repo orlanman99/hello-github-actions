@@ -26,4 +26,15 @@ jobs:
         uses: ./action-b
         with:
           MY_NAM: "prueba"
+  test:
+    name: corriendo accion a - > b
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Accion b
+        uses: ./action-b
+        with:
+          MY_NAM: "prueba"
   
