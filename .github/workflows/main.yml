@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   apply:
-    name: Hello world action
+    name: corriendo accion a
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -12,8 +12,12 @@ jobs:
         uses: ./action-a
         with:
           MY_NAME: "Yeison Orlando Manrique Rojas"
+      - name: Accion b
+        uses: ./action-b
+        with:
+          MY_NAM: "prueba"
   build:
-    name: Hello world action2
+    name: corriendo accion b
     runs-on: ubuntu-latest
     steps:
       - name: checkout
