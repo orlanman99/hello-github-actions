@@ -17,9 +17,13 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
         node: [6, 8, 10]
+        name: 
+          - "yeison"
+          - "orlando" 
+          - "manrique"
         exclude:
         - os: windows-latest
-          node: 6
+          #node: 6
         - os: macos-latest
 #    runs-on: ubuntu-latest
     runs-on: ${{matrix.os}}
@@ -29,7 +33,7 @@ jobs:
       - name: Accion a
         uses: ./action-a
         with:
-          MY_NAME: "Yeison Orlando Manrique Rojas"
+          MY_NAME: ${{matrix.name}}
       - name: Accion b
         uses: ./action-b
         with:
