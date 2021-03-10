@@ -33,6 +33,11 @@ jobs:
         uses: ./action-b
         with:
           MY_NAM: "prueba"
+      
+      - name: node config
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{matrix.node}}
           
 #      - name: npm install
 #        run: npm install
