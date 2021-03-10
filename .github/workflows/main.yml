@@ -1,6 +1,15 @@
 name: A workflow for my Hello World file
 on: [push, pull_request]
 
+#on:
+#  pull_request:
+#    branches:
+#      - qa
+
+#on:
+#  schedule:
+#    - cron:  '0 15 * * 2'
+
 jobs:
   apply:
     name: corriendo accion a
@@ -16,6 +25,11 @@ jobs:
         uses: ./action-b
         with:
           MY_NAM: "prueba"
+          
+#      - name: npm install
+#        run: npm install
+#        shell: bash
+
   build:
     name: corriendo accion b
     runs-on: ubuntu-latest
