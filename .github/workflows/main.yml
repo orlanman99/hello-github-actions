@@ -24,7 +24,7 @@ jobs:
           - "manrique"
         exclude:
         - os: windows-latest
-          #node: 6
+          node: 6
         - os: macos-latest
         
     #runs-on: ubuntu-latest    
