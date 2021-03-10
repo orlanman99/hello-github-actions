@@ -37,7 +37,7 @@ jobs:
       - name: Accion b
         uses: ./action-b
         with:
-          MY_NAM: "prueba"
+          MY_NAM: ${{secrets.NAME_TEST}}
       
       - name: node config
         uses: actions/setup-node@v1
