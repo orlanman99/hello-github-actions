@@ -1,5 +1,5 @@
 name: "Hello Actions"
-description: "Greet someone"
+description: "Ejemplo GitHub Actions"
 
 inputs:
   MY_NAME:
